@@ -17,7 +17,7 @@ go build -o bin/vpnmaker
 ./bin/vpnmaker
 
 # OR
-# Build the project using make commands
+# Build and run the project using one make command
 make run
 
 ```
