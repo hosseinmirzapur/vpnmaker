@@ -15,6 +15,11 @@ chmod +x vpn.sh && ./vpn.sh
 # build and run the vpnmaker
 go build -o bin/vpnmaker
 ./bin/vpnmaker
+
+# OR
+# Build the project using make commands
+make run
+
 ```
 
 > Note: choose first option by entering number **1**, if prompted (which you will be!).
