@@ -37,6 +37,8 @@ make run
 
 After the commands being successfully done, you shall get your config in the created.json file on the path you ran the commands!
 
+Also there's a qrcode.jpg file after running the commands, which gives you the QR code of the created config to be scanned by Hiddify Next App.
+
 ## Hiddify Config Usage
 
 Be sure to check the [Latest Hiddify-Next App For Your Desired Platform](https://github.com/hiddify/hiddify-next/releases) and download the file, then easily copy/paste the config from previous level inside the app, and enjoy your experience :)

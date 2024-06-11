@@ -11,6 +11,8 @@ import (
 	"strings"
 
 	"github.com/gocarina/gocsv"
+	"github.com/yeqown/go-qrcode/v2"
+	"github.com/yeqown/go-qrcode/writer/standard"
 )
 
 func main() {
@@ -40,6 +42,25 @@ func main() {
 	}
 	err = os.WriteFile("created.json", fileBytes, 0644)
 	if err != nil {
+		log.Fatalln(err)
+	}
+
+	// print out a QR code of the config inside terminal
+	// file, err := os.Create("created.png")
+	// if err != nil {
+	// 	log.Fatalln(err)
+	// }
+	qrc, err := qrcode.New(string(fileBytes))
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	w, err := standard.New("qrcode.jpg")
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	if err = qrc.Save(w); err != nil {
 		log.Fatalln(err)
 	}
 }

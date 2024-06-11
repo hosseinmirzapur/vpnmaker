@@ -11,3 +11,4 @@ clean:
 	@rm vpnmaker
 	@rm warp*.txt
 	@rm yg_update
+	@rm *.jpg
