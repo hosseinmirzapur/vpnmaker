@@ -11,6 +11,8 @@ sudo snap install go
 
 ```
 
+Then clone this repository and after navigating into the cloned folder, run below commands.
+
 ```bash
 # clone this repository
 git clone https://github.com/hosseinmirzapur/vpnmaker
