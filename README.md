@@ -2,6 +2,15 @@
 
 ## Quickstart
 
+First make sure you have Go version 1.20 or higher installed on your system
+
+```bash
+# easily install it on ubuntu via snapcraft
+# try running it with --classic flag if any error happened
+sudo snap install go
+
+```
+
 ```bash
 # clone this repository
 git clone https://github.com/hosseinmirzapur/vpnmaker
